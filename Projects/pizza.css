@@ -1,0 +1,263 @@
+*{
+    /* css reset */
+    margin: 0;
+    padding: 0;
+    color:black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* utility classes */
+:root{
+    --navbar-height:59px;
+}
+.center{
+    text-align: center;
+}
+.h-primary{
+    font-size: 2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.h-tertiary{
+    font-size: 23px;
+    margin: 8px 0px;
+    font-family: 'Bree Serif', serif;
+}
+p{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar img{
+    height: 40px;
+    border-radius: 40px;
+    margin: 18px 40px;
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    /* padding: 0px 18px; */
+    list-style: none;
+    font-size: 20px;
+}
+#navbar ul li a{
+    display: block;
+    padding: 0px 15px;
+   text-decoration: none;
+   border-radius: 20px;
+   color: white;
+
+}
+#navbar ul li a:hover{
+   color: black;
+   background-color: white;
+
+}
+
+/* Home Section */
+#home{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:317px;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../img/pizza/back1.jpg') no-repeat center -24px/cover;
+    top: 0%;
+    width: 100%;
+    /* height:400px; */
+    height: 100%;
+
+    z-index: -1;
+    opacity: 0.88;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#home p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    text-align-last: center;
+}
+#home .btn{
+    border-radius: 23px;
+    background-color: brown;
+    padding: 10px;
+    margin: 18px;
+    font-size: 1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Menu section */
+#menu-section{
+    /* border: 2px solid red; */
+    /* margin-top: -35px; */
+    width: 100%;
+    /* height: 605px; */
+    padding: 16px 0px;
+    background-color:  rgb(238 238 168);
+}
+#menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    font-family: 'Bree Serif', serif;
+    
+}
+#menu img{
+    height: 132px;
+    border-radius: 40px;
+    /* display: block;
+    align-self: center; */
+    /* margin: 2px 2px; */
+}
+
+#menu .box{
+    display: flex;
+    flex-direction: column;
+   border: 2px solid black;
+   border-radius: 23px;
+   background-color: rgb(246 241 236);
+   width: 289px;
+   padding: 6px 7px;
+   margin: 17px 5px;
+   box-shadow: 3px 3px 14px;
+  
+}
+
+
+/* services section */
+#services-section{
+    padding: 20px 0px;
+    border: 2px solid black;
+}
+#services{
+    margin: 10px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 6px 12px;
+    border-radius: 23px;
+    background-color:rgb(247, 219, 199);
+    box-shadow: 8px -5px 19px  ;
+}
+
+#services .box img{
+    height: 110px;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
+#services .box p{
+    flex-wrap: wrap;
+}
+
+
+
+/* Contact Section */
+#contact-section{
+    position: relative;
+    /* margin-top: 25px; */
+    /* padding-top: 13px; */
+    /* border: 2px solid black; */
+    /* z-index: -1; */
+    
+}
+#contact-section::before{
+    content: "";
+    background: url('../img/food/contact.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-section h1{
+    padding: 20px;
+}
+
+#contact input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size:1.0rem ;
+}
+#contact label{
+    font-size: 18px;
+}
+
+#contact form{
+    width: 40%;
+}
+#contact .btn {
+    width: 90px;
+    font-size: 30px;
+    margin: auto;
+    padding: 20px;
+}
+
+footer{
+    padding-top: 15px;
+    background-color: black;
+}
+footer div{
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+
+
+@media (max-width:280px){
+    #navbar ul li a{
+        font-size: small;
+        padding: 0px 10px;
+    }
+    #home h1{
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,145 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* utility classes */
+.center{
+    text-align: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* navigation section */
+#navbar{
+   position: sticky;
+   top: 0%;
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+#navbar::before{
+   content:'';
+   position:absolute;
+   width: 100%;
+   height: 100%;
+   background: black;
+   z-index: -1;
+   opacity: 0.3;
+   top: 0;
+
+}
+
+#navbar ul{
+    display:flex ;
+    /* flex-direction: row-reverse; */
+    padding:10px 40px;
+}
+
+#navbar .item{
+    list-style: none;
+    margin:10px 35px;
+}
+#navbar .item a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+}
+#navbar .item a:hover{
+    border-bottom: 2px dotted;
+    color:rgb(149, 200, 166);
+}
+
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    /* border: 2px solid red; */
+    margin-top:34px ;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../img/gallery/background.jpg') no-repeat center center/cover;
+    width: 100%;
+    height:400px;
+    z-index: -1;
+    opacity: 1;
+    top: 0%;
+}
+#home h2{
+    font-size: 35px;
+    font-family: 'Roboto Slab', serif;
+}
+#home h1{
+    font-size: 45px;
+    font-family: 'Rubik', sans-serif;
+
+}
+#home .btn{
+    background: transparent;
+    margin: 20px;
+    padding: 8px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#home .btn:hover{
+   background-color: rgb(208, 225, 192);
+}
+
+
+/* gallery section */
+#gallery{
+    /* border: 2px solid green; */
+    height: 100%;
+    margin-top: 4px;
+    padding-top: 20px;
+    background:rgb(196, 229, 241);
+}
+#gallery .image{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+#gallery .box{
+    width: 250px;
+    height: 200px;
+    /* border: 2px solid yellow; */
+    margin: 20px 58px;
+    box-shadow: 8px 8px 10px;
+}
+#gallery img{
+    display: block;
+    width:250px;
+    height: 200px;
+}
+#gallery h1{
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:376px){
+    #navbar .item{
+        margin: 10px 20px;
+    }
+}

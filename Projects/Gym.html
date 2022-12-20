@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arfaz's Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        /* CSS RESET */
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            color: white;
+            margin: 0;
+            padding: 0;
+            background: url(img/Gym/man.jpg);
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 52px;
+            top: 20px;
+            /* border: 2px solid red; */
+        }
+
+        .mid {
+            display: block;
+            width: 43%;
+            margin: 20px auto;
+            /* border: 2px solid blue; */
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 32px;
+            top: 35px;
+            /* border: 2px solid green; */
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 44px 9px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: rgb(79, 151, 202);
+        }
+
+        .left img {
+            width: 40px;
+            display: block;
+            margin: auto;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 19px;
+            font-weight: bolder;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: transparent;
+            color: white;
+            padding: 5px 9px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(138, 138, 138);
+        }
+
+        .container {
+            border: 2px solid white;
+            border-radius: 15px;
+            margin: 67px 63px;
+            padding: 43px 77px;
+            width: 42%;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            font-size: medium;
+            text-align: center;
+            display: block;
+            width: 370px;
+            padding: 5px;
+            margin: 5px auto;
+            border: 2px solid black;
+            font-size: 15px;
+            border-radius: 10px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .container button{
+            display: block;
+            width: 20%;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left">
+            <img src="img/Gym/logo.png" alt="LOGO">
+            <div>Arfaz's Fitness</div>
+        </div>
+        <!-- for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- for extras -->
+        <div class="right">
+            <button class="btn">Need help?</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <div>
+            Join the best gym in the Mangalore
+        </div>
+        <form action="noacction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your phone number">
+            </div>
+            <div>
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
